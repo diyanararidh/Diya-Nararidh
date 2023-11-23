@@ -60,7 +60,7 @@ body{
   font-size: 18px;
   color: var(--text-color);
   text-decoration: none;
-  margin: auto;
+  margin: 30;
   position: right;
   font-weight: 500;
   transition: 0.5s;
