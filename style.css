@@ -61,7 +61,7 @@ body{
   font-size: 18px;
   color: var(--text-color);
   text-decoration: none;
-  margin-right: 30px;
+  margin-right: 20px;
   font-weight: 500;
   transition: 0.5s;
   position: relative;
@@ -243,7 +243,7 @@ section {
 }
 
 .img img{
-	width: 50%;
+	width: 70%;
   height: auto;
 }
 
