@@ -61,7 +61,7 @@ body{
   color: var(--text-color);
   text-decoration: none;
   margin: auto;
-  position: static;
+  position: right;
   font-weight: 500;
   transition: 0.5s;
 }
