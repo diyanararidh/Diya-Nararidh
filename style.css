@@ -27,8 +27,8 @@ body{
 }
 .header {
   position: fixed;
-  top: 20;
-  left: 20;
+  top: 20px;
+  left: 20px;
   width: 100%;
   padding: 2rem 10%;
   background: transparent;
@@ -61,10 +61,10 @@ body{
   font-size: 18px;
   color: var(--text-color);
   text-decoration: none;
-  margin: 30;
-  position: right;
+  margin-right: 30px;
   font-weight: 500;
   transition: 0.5s;
+  position: relative;
 }
 .navbar a:hover, 
 .nav a.active {
