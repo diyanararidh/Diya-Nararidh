@@ -56,6 +56,10 @@ body{
   animation: showRight 1s ease forwards;
   animation-delay: 0.5s;
 }
+.navbar {
+  display: flex;
+  align-items: center;
+}
 
 .navbar a {
   font-size: 18px;
