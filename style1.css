@@ -244,8 +244,6 @@ section {
 .img{
 	position: relative;
 	overflow: hidden;
-    width: 70%;
-    height: auto;
 }
 
 .img img{
