@@ -71,7 +71,7 @@ body{
   position: relative;
 }
 .navbar a:hover, 
-.nav a.active {
+.navbar a.active {
   color: var(--main-color);
 }
 
