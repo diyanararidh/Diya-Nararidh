@@ -244,11 +244,13 @@ section {
 .img{
 	position: relative;
 	overflow: hidden;
+    width: 70%;
+    height: auto;
 }
 
 .img img{
-	width: 70%;
-  height: auto;
+    width: 70%;
+    height: auto;
 }
 
 
