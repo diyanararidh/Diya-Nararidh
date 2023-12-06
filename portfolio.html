@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset = "UTF-8">
-    <meta http-equiv = "X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style1.css">
-    <title> portfolio </title>
+    <style>
+        /* Add this style to control the maximum width of the images */
+        .image-container a img {
+            max-width: 100%; /* Adjust the percentage as needed */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Remove extra spacing below inline images */
+            margin: 0 auto; /* Center the images */
+        }
+    </style>
+    <title>Portfolio</title>
 </head>
 <body>
 
@@ -13,33 +22,33 @@
       
     </section>
 
-    <header class = "header">
-        <a href="#" class = "logo">Diya Nararidh.</a>
+    <header class="header">
+        <a href="#" class="logo">Diya Nararidh.</a>
         <div class="bx bx-menu" id="menu-icon"></div>
   
-        <nav class= "navbar">
-            <a href="./index.html" >Home</a>
+        <nav class="navbar">
+            <a href="./index.html">Home</a>
             <a href="./about.html">About</a>
             <a href="./portfolio.html" class="active">Portfolio</a>
-            <a href="./contact.html">Contact</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>  
     
     <section>
+        <div class="image-container">
             <a href="./portfolio-painting.html">
-                <img src="images/IMG_0925.jpg" alt= painiting width: 50% height="auto">
+                <img src="images/IMG_0925.jpg" alt="Painting">
             </a>
        
             <a href="./portfolio-photography.html">
-                <img src="images/IMG_5519.jpg" alt=photograph width: 50% height="auto">
+                <img src="images/IMG_5519.jpg" alt="Photography">
             </a>
+        </div>
 
         <p>
-            Please click on a photo to see the rest of my pieces
+            Please click on a photo to see the rest of my pieces.
         </p>
     </section>
-    
 
-    
 </body>
 </html>
