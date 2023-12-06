@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset = "UTF-8">
-    <meta http-equiv = "X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style1.css">
-    <title> portfolio-painting </title>
+    <title>portfolio-painting</title>
 </head>
 <body>
 
@@ -13,11 +13,11 @@
       
     </section>
   
-    <header class = "header">
-        <a href="./index.html" class = "logo">Diya Nararidh.</a>
+    <header class="header">
+        <a href="./index.html" class="logo">Diya Nararidh.</a>
         <div class="bx bx-menu" id="menu-icon"></div>
   
-        <nav class= "navbar">
+        <nav class="navbar">
             <a href="./index.html" class="active">Home</a>
             <a href="./about.html">About</a>
             <a href="./portfolio.html">Portfolio</a>
@@ -25,56 +25,69 @@
         </nav>
     </header>  
     
-	<!-- Slideshow container -->
-<div class="slideshow-container">
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
 
-	<!-- Full-width images with number and caption text -->
-	<div class="mySlides fade">
-	  <div class="numbertext">1 / 5</div>
-	  <img src="images/01Nararidh_Diya_FUTURE copy 2.jpg" style="width:100%">
-	  <div class="text">FUTURE</div>
-	</div>
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+          <img src="images/01Nararidh_Diya_FUTURE copy 2.jpg" style="width:100%">
+          <div class="text">FUTURE</div>
+        </div>
+      
+        <!-- other slides... -->
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
   
-	<div class="mySlides fade">
-	  <div class="numbertext">2 / 5</div>
-	  <img src="images/03Nararidh_Diya_BLOOM copy 2.jpg" style="width:100%">
-	  <div class="text">BLOOM</div>
-	</div>
-  
-	<div class="mySlides fade">
-	  <div class="numbertext">3 / 5</div>
-	  <img src="images/04Nararidh_Diya_NO! copy 2.jpg" style="width:100%">
-	  <div class="text">NO!</div>
-	</div>
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
 
-	<div class="mySlides fade">
-		<div class="numbertext">4 / 5</div>
-		<img src="images/08Nararidh_Diya_LIFE copy 2.jpg" style="width:100%">
-		<div class="text">LIFE</div>
-	</div>
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
 
-	<div class="mySlides fade">
-		<div class="numbertext">5 / 5</div>
-		<img src="images/09Nararidh_Diya_HUMAN REVOLUTION copy 2.jpg" style="width:100%">
-		<div class="text">HUMAN REVOLUTION</div>
-	</div>
-  
-	<!-- Next and previous buttons -->
-	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-	<a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-  <br>
-  
-  <!-- The dots/circles -->
-  <div style="text-align:center">
-	<span class="dot" onclick="currentSlide(1)"></span>
-	<span class="dot" onclick="currentSlide(2)"></span>
-	<span class="dot" onclick="currentSlide(3)"></span>
-	<span class="dot" onclick="currentSlide(4)"></span>
-	<span class="dot" onclick="currentSlide(5)"></span>
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
 
-  </div>
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
 
-    
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
 </body>
 </html>
