@@ -14,7 +14,7 @@
     var i;
     var slides = document.getElementsByClassName("mySlides");
     var dots = document.getElementsByClassName("dot");
-    
+
     if (n > slides.length) {
       slideIndex = 1;
     }
