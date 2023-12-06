@@ -122,8 +122,7 @@ section {
 }
 
 .image-container {
-    float: right;
-    margin: auto;
+    text-align: center;
 }
 .home-content .btn-box {
   display: flex;
