@@ -123,7 +123,14 @@ section {
 
 .image-container {
     text-align: center;
+    margin-top: 20px; /* Add some top margin for spacing */
 }
+
+.image-container a {
+    display: inline-block; /* Make links behave as inline blocks */
+    margin-right: 10px; /* Adjust the space between images */
+}
+
 .home-content .btn-box {
   display: flex;
   justify-content: space-between;
