@@ -214,12 +214,14 @@ label {
   font-weight: bold;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
-  border: 1px solid #ccc; /* Added border for better visibility */
+  border: 1px solid #ccc;
   border-radius: 5px;
+  margin-bottom: 10px; /* Add margin-bottom for better spacing */
 }
 
 button {
@@ -230,6 +232,7 @@ button {
   border-radius: 5px;
   cursor: pointer;
 }
+
 
 /* Responsive styles */
 @media (max-width: 600px) {
