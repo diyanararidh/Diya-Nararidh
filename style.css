@@ -14,7 +14,7 @@ font-family: 'Poppins', sans-serif;
 :root {
   --bg-color: #081b29;
   --second-bg-color: #112e42;
-  --text-color: #ededed;
+  --text-color: black;
   --main-color: #00abf0;
 }
 html {
@@ -22,8 +22,11 @@ html {
   overflow-x: hidden;
 }
 body{
-  color: var(--text-color);
-  background-color: var(--bg-color);
+  margin: 0;
+  padding: 0;
+  background: url('images/IMG_0615.JPG') center center no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 .header {
   position: fixed;
