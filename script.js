@@ -4,9 +4,9 @@ const slides = document.querySelectorAll(".img");
 const backgrounds = document.querySelectorAll('.bg');
 const options = document.querySelectorAll('.option');
 
-var index = 1;
-var op_index = 0;
-var size = slides[index].clientWidth;
+let index = 0;
+let op_index = 0;
+const size = slides[0].clientWidth;
 
 update();
 
@@ -73,42 +73,4 @@ slider.addEventListener('transitionend', () => {
 
 btns.forEach(btn => btn.addEventListener('click', btnCheck));
 options.forEach(option => option.addEventListener('click', optionFunc));
-/* {<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    var slideIndex = 1;
-    showSlides(slideIndex);
 
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-      var i = 0;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-
-      if (n > slides.length) {
-        slideIndex = 1;
-      }
-
-      if (n < 1) {
-        slideIndex = slides.length;
-      }
-
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-
-      slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " active";
-    }
-  }
-</script> */

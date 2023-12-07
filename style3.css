@@ -118,7 +118,7 @@ section {
   font-size: 3.2rem;
   font-weight: 700;
   color: transparent;
-  -webkt-text-stroke: 0.7px var(--main-color);
+  -webkit-text-stroke: 0.7px var(--main-color);
 }
 
 .home-content p{
@@ -144,9 +144,8 @@ section {
   height: 50px;
 }
 .img {
-    width: 50%;
+    width: 100%;
     height: auto;
-    position: center;
 }
 
 .btn-box {
@@ -160,8 +159,7 @@ section {
 
 .btn-box .btn {
   position: relative;
-  display: inline-block;
-  padding: 1rem 1.2rem;
+  display: inline-flex;
   height: center;
   align-items: center;
   width: 15rem;
@@ -185,13 +183,12 @@ section {
   left: 0;
   width: 0;
   height: 100%;
-  background: var(--main-color);
+  background: red;
   z-index: -1;
   transition: 0.5s;
 }
 
 .btn-box .btn:hover::before {
-    width: 100%;
   color: #00abf0;
 }
 
