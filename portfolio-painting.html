@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="script.js"></script>
     <link rel="stylesheet" href="style1.css">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
     <title>portfolio-painting</title>
 </head>
 <body>
@@ -26,11 +26,64 @@
         </nav>
     </header>  
     
-    <!-- Slideshow container -->
+
+		<div class="container">
+			<div class="background">
+				<img src="images/01Nararidh_Diya_FUTURE copy 2.jpg" class="bg">
+				<img src="images/03Nararidh_Diya_BLOOM copy 2.jpg" class="bg">
+				<img src="images/04Nararidh_Diya_NO! copy 2.jpg" class="bg">
+				<img src="images/08Nararidh_Diya_LIFE copy 2.jpg" class="bg">
+				<img src="images/09Nararidh_Diya_HUMAN REVOLUTION copy 2.jpg" class="bg">
+			</div>
+			<div class="slider-container">
+				<div>
+					<div>
+						<div class="slider">
+							<div class="img" id="first">
+								<img src="images/09Nararidh_Diya_HUMAN REVOLUTION copy 2.jpg">
+							</div>
+							<div class="img">
+								<img src="images/01Nararidh_Diya_FUTURE copy 2.jpg">
+							</div>
+							<div class="img">
+								<img src="images/03Nararidh_Diya_BLOOM copy 2.jpg">
+							</div>
+							<div class="img">
+								<img src="images/04Nararidh_Diya_NO! copy 2.jpg">
+							</div>
+							<div class="img">
+								<img src="images/08Nararidh_Diya_LIFE copy 2.jpg">
+							</div>
+							<div class="img">
+								<img src="images/09Nararidh_Diya_HUMAN REVOLUTION copy 2.jpg">
+							</div>
+							<div class="img" id="last">
+								<img src="images/01Nararidh_Diya_FUTURE copy 2.jpg">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<button class="btn" id="prev"><i class="fas fa-chevron-left"></i></button>
+				<button class="btn" id="next"><i class="fas fa-chevron-right"></i></button>
+				<ul>
+					<li class="option" op-index="0"></li>
+					<li class="option" op-index="1"></li>
+					<li class="option" op-index="2"></li>
+					<li class="option" op-index="3"></li>
+					<li class="option" op-index="4"></li>
+				</ul>
+			</div>
+		</div>
+		<script type="text/javascript" src="script.js"></script>
+
+	
+    <!-- Slideshow container
     <div class="slideshow-container">
 
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
+        Full-width images with number and caption text -->
+        <!-- <div class="mySlides fade">
           <div class="numbertext">1 / 5</div>
           <img src="images/01Nararidh_Diya_FUTURE copy 2.jpg" style="width:100%">
           <div class="text">FUTURE</div>
@@ -39,13 +92,13 @@
         <!-- other slides... -->
       
         <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-    <br>
+    <br> -->
   
     <!-- The dots/circles -->
-    <div style="text-align:center">
+    <!-- <div style="text-align:center">
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
@@ -89,6 +142,6 @@
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
       }
-    </script>
+    </script> --> -->
 </body>
 </html>
