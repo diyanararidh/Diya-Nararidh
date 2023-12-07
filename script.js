@@ -111,4 +111,4 @@ options.forEach(option => option.addEventListener('click', optionFunc));
       dots[slideIndex - 1].className += " active";
     }
   }
-</script> */}
+</script> */
